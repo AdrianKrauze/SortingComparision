@@ -20,6 +20,8 @@ The **SortProject** is a C# console application designed to measure and compare 
 - .NET SDK
 - Visual Studio or any C# compatible IDE
 
+### Outputs
+
 - Example Output
 ![image](https://github.com/AdrianKrauze/SortingComparision/assets/118012788/27dd83c1-6c8e-495c-b3ad-60b3cf26b1e9)
 

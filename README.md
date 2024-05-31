@@ -11,7 +11,7 @@ The **SortProject** is a C# console application designed to measure and compare 
 - **Custom Gap Sequences**: Evaluates Shell Sort with custom gap sequences such as Stasiewicz gaps, Segewick gaps, prime number gaps, and modified Segewick gaps.
 - **Array Initialization**: Automatically generates and initializes arrays of various sizes for testing.
 - **Results Display**: Outputs the time taken by each sorting algorithm for different array sizes in a tabular format.
-- **Saving Data To CSV FILE**: Allows you to make charts
+- **Saving Data To CSV FILE**: Allows you to made charts
 
 ## Getting Started
 

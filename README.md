@@ -23,6 +23,6 @@ The **SortProject** is a C# console application designed to measure and compare 
 - Example Output
 ![image](https://github.com/AdrianKrauze/SortingComparision/assets/118012788/27dd83c1-6c8e-495c-b3ad-60b3cf26b1e9)
 
-- And Example chart with python(chart does not include bubble sort and insertion sort data, because they would go off the chart.)
+- And Example chart make with python(chart does not include bubble sort and insertion sort data, because they would go off the chart.)
 ![Figure_1](https://github.com/AdrianKrauze/SortingComparision/assets/118012788/cdfc8df5-37e8-4fb5-bf65-9bb3d2ae6f39)
 

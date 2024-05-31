@@ -28,3 +28,11 @@ The **SortProject** is a C# console application designed to measure and compare 
 - And Example chart make with python(chart does not include bubble sort and insertion sort data, because they would go off the chart.)
 ![Figure_1](https://github.com/AdrianKrauze/SortingComparision/assets/118012788/cdfc8df5-37e8-4fb5-bf65-9bb3d2ae6f39)
 
+
+###Conclusions
+
+- **Bubble Sort and Insertion Sort are very slow in comparison with ShellSort (with any sequence) and QuickSort.**
+- **QuickSort is the fastest function in comparison.**
+- **Overall, Bubble Sort is very inefficient for sorting large datasets.**
+
+

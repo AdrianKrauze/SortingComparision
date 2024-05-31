@@ -24,4 +24,5 @@ The **SortProject** is a C# console application designed to measure and compare 
 ![image](https://github.com/AdrianKrauze/SortingComparision/assets/118012788/27dd83c1-6c8e-495c-b3ad-60b3cf26b1e9)
 
 - And Example chart with python
-![wykres](https://github.com/AdrianKrauze/SortingComparision/assets/118012788/3a2bef15-3de7-4a76-8fb6-013107fee244)
+![Figure_1](https://github.com/AdrianKrauze/SortingComparision/assets/118012788/cdfc8df5-37e8-4fb5-bf65-9bb3d2ae6f39)
+

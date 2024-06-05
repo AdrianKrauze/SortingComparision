@@ -1,0 +1,63 @@
+using System.Diagnostics;
+
+namespace SortProject
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+
+            Console.WriteLine("Elementy\t|ShellSort21\t|ShellsSort32\t|ShellsSort43");
+            Sorter sorter = new Sorter();
+
+
+            int[][] initialArrays = new int[5][];
+            for (int i = 0; i< 5; i++)
+            {
+                initialArrays[i] = sorter.FillArray((i + 1) * 10000);
+            }
+
+            var results = new List<(int size, long shell21, long shell32,long shell43)>();
+
+            foreach (var array in initialArrays)
+            {
+                var size =array.Length;
+                results.Add((size,
+                    sorter.MeasureSortTime(() => sorter.ShellSort21((int[])array.Clone())),
+                    sorter.MeasureSortTime(() => sorter.ShellSortWithMyOwnGaps((int[])array.Clone(), sorter.fillStasiewiczGaps(size))),
+                    sorter.MeasureSortTime(() => sorter.ShellSortWithMyOwnGaps((int[])array.Clone(), sorter.fillSedgewickGaps(size)))));
+            }
+
+            foreach(var result in results)
+            {
+                Console.WriteLine($"{result.size}\t\t|{result.shell21}ms\t\t|{result.shell32}ms\t\t|{result.shell43}ms");
+            }
+            Console.WriteLine();
+            Console.Write("Elementy");
+           
+            for(int i = 0;i< 3;i++)
+            {
+                Console.Write("\t|myOwnGap"+i);
+            }
+            Console.WriteLine();
+
+            var ownGapResult = new List<(int size, long shellOwnGap1, long shellOwnGap2, long shellOwnGap3)>();
+
+            foreach (var array in initialArrays)
+            {
+                var size = array.Length;
+                ownGapResult.Add((size,
+                    sorter.MeasureSortTime(() => sorter.ShellSortWithMyOwnGaps((int[])array.Clone(), sorter.generateMyOwnGaps5k(size))),
+                    sorter.MeasureSortTime(() => sorter.ShellSortWithMyOwnGaps((int[])array.Clone(), sorter.myOwnGaps2(size))),
+                    sorter.MeasureSortTime(() => sorter.ShellSortWithMyOwnGaps((int[])array.Clone(), sorter.myOwnGaps3(size)))));              
+            }
+            foreach (var result in ownGapResult)
+            {
+                Console.WriteLine($"{result.size}\t\t|{result.shellOwnGap1}ms\t\t|{result.shellOwnGap2}ms\t\t|{result.shellOwnGap3}ms");
+            }
+
+
+
+        }
+    }
+}
